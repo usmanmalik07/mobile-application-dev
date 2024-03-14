@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, Text, TextInput, TouchableOpacity, StyleSheet, Image } from 'react-native';
+import { View, Text, TextInput, TouchableOpacity, StyleSheet, Image, Alert } from 'react-native';
 
 const App = () => {
   const [username, setUsername] = useState('');
@@ -21,17 +21,17 @@ const App = () => {
   };
 
   const handleLogin = () => {
-    console.log('Logging in...');
+    Alert.alert("You Pressed ME");
   };
 
   const handleSignup = () => {
-    console.log('Navigating to signup page...');
+    Alert.alert("You Pressed ME");
   };
 
   return (
     <View style={styles.container}>
       <View style={styles.logoContainer}>
-        <Image source={require('./img/340.jpg')} style={styles.logo} />
+        <Image source={require('./img/logo.jpg')} style={styles.logo} />
       </View>
       
       <View style={styles.loginContainer}>
